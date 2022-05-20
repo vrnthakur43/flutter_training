@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_training/home_page.dart';
 
 void main(){
   runApp(MyApp());
@@ -10,7 +11,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(child: 
-      Center(child: Text("flutter 30 days of course"))),);
+      home: HomePage());
   }
 }
