@@ -7,9 +7,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final num days = 30;
     final String name = "viren thakur";
-
-
-    return Material(child:
-    Center(child: Text("flutter $days days of course with $name")));
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Flutter Training"),
+      ),
+      body: Center(child: Text("flutter $days days of course with $name")),
+      drawer: Drawer(),
+    );
   }
 }
