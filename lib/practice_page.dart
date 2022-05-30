@@ -62,7 +62,10 @@ class _SignupPageState extends State<SignupPage> {
                 });
 
                 await Future.delayed(Duration(seconds: 1));
-                Navigator.pushNamed(context, MyRoute.homeRoute);
+                await Navigator.pushNamed(context, MyRoute.homeRoute);
+                setState(() {
+                  buttonChange = false;
+                });
               },
               child: AnimatedContainer(
                 duration: Duration(seconds: 1),
