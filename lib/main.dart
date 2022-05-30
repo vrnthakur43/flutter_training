@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_training/home_page.dart';
-import 'package:flutter_training/login_page.dart';
-import 'package:flutter_training/practice_page.dart';
+import 'package:flutter_training/pages/home_page.dart';
+import 'package:flutter_training/pages/login_page.dart';
+import 'package:flutter_training/pages/practice_page.dart';
 import 'package:flutter_training/utils/MyRoutes.dart';
 
 void main() {
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
-      initialRoute: "/" ,
+      initialRoute: MyRoute.homeRoute,
       routes: {
         MyRoute.homeRoute: (context) => HomePage(),
         MyRoute.loginRoute: (context) => LoginPage(),
