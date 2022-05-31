@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_training/utils/MyRoutes.dart';
 
@@ -16,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
 
   moveToHomeScreen(BuildContext buildContext) async {
-    if(_formKey.currentState!.validate()) {
+    if (_formKey.currentState!.validate()) {
       setState(() {
         changeButton = true;
       });
@@ -76,10 +75,10 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       TextFormField(
                         obscureText: true,
-                        validator: (value){
-                          if(value!.isEmpty){
+                        validator: (value) {
+                          if (value!.isEmpty) {
                             return "Password cannot be empty";
-                          }else if(value.length<6){
+                          } else if (value.length < 6) {
                             return "Password length should be atleast 6";
                           }
                           return null;
